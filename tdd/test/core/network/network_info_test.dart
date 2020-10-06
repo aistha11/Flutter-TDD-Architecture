@@ -6,12 +6,12 @@ import 'package:tdd/core/network/network_info.dart';
 class MockDataConnectionChecker extends Mock implements DataConnectionChecker{}
 
 void main() {
-  NetworkInfoIml networkInfo;
+  NetworkInfoImpl networkInfo;
   MockDataConnectionChecker mockDataConnectionChecker;
 
   setUp((){
     mockDataConnectionChecker = MockDataConnectionChecker();
-    networkInfo = NetworkInfoIml(mockDataConnectionChecker);
+    networkInfo = NetworkInfoImpl(mockDataConnectionChecker);
   });
 
   group('isConnected', (){
